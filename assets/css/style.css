@@ -4,6 +4,11 @@ body {
     overflow-y: hidden;
 }
 
+body {
+    background-color: #1E2140;
+    color: crimson;
+}
+
 .container {
     height: 100vh;
 }
@@ -34,4 +39,8 @@ body {
 
 #timer {
     padding-top: 60px;
+}
+
+i {
+    color: snow;
 }
