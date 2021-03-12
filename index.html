@@ -58,10 +58,28 @@
                 <button type="button" class="btn btn-link btn-lg" id="reset"><i class="fas fa-undo"></i></button>
             </div>
             <div class="col-3 controls">
-                <button type="button" class="btn btn-link btn-lg" id="info"><i class="fas fa-question"></i></button>
+                <button type="button" class="btn btn-link btn-lg" id="info" data-toggle="modal" data-target="#infoModal"><i class="fas fa-question"></i></button>
             </div>
         </div>
     </div>
+
+    <!--Modal  from Bootsrap-->
+    <div class="modal" tabindex="-1" role="dialog" id="infoModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">What is a Pomodoro?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. The technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. Each interval is known as a pomodoro, from the Italian word for 'tomato', after the tomato-shaped kitchen timer that Cirillo used as a university student</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal-->
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
