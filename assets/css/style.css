@@ -30,7 +30,7 @@ body {
 
 .info-section {
     height: 50vh;
-    padding-top: 40px;
+    padding-top: 65px;
 }
 
 .controls {
@@ -38,9 +38,13 @@ body {
 }
 
 #timer {
-    padding-top: 60px;
+    padding-top: 80px;
 }
 
-i {
+i,
+#timer,
+#break-duration,
+#work-duration {
     color: snow;
+    font-size: 24px;
 }
