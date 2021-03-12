@@ -1,0 +1,26 @@
+html,
+body {
+    height: 100%;
+}
+
+.main-heading {
+    height: 10vh;
+}
+
+.break-input,
+.work-input {
+    height: 10vh;
+}
+
+.info-section {
+    height: 50vh;
+    padding-top: 40px;
+}
+
+.controls {
+    height: 25vh;
+}
+
+#timer {
+    padding-top: 60px;
+}

@@ -9,57 +9,55 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-   <div class="text-center">
-        <div class="container-fluid row">
-            <div class="col-12">
+   <div class="container text-center">
+        <div class="row">
+            <div class="col-12 main-heading">
                 <h1>Pomodoro Timer</h1>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 break-input">
                 <h2>Break</h2>
             </div>
-            <div class="col-6">
+            <div class="col-6 work-input">
                 <h2>Work</h2>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 break-input">
                 <button type="button" class="btn btn-link btn-md" id="less-break"><i class="fas fa-minus-circle"></i></button>
                 <button type="button" class="btn btn-link btn-lg" id="break-duration">5</button>
                 <button type="button" class="btn btn-link btn-md" id="more-break"><i class="fas fa-plus-circle"></i></button>
             </div>
-            <div class="col-6">
+            <div class="col-6 work-input">
                 <button type="button" class="btn btn-link btn-md" id="less-work"><i class="fas fa-minus-circle"></i></button>
                 <button type="button" class="btn btn-link btn-lg" id="work-duration">25</button>
                 <button type="button" class="btn btn-link btn-md" id="more-work"><i class="fas fa-plus-circle"></i></button>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row info-section">
             <div class="col-12">
-                <h2 id="session-status">Focus!</h2>
+                <h1 id="session-status">Focus!</h1>
             <div id="timer">
-                    <h1>Timer Placed here</h1>
+                    <h2>Timer Placed here</h2>
             </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-4">
+            <div class="col-4 controls">
                 <button type="button" class="btn btn-link btn-lg" id="play"><i class="fas fa-play"></i></button>
             </div>
-            <div class="col-4">
+            <div class="col-4 controls">
                 <button type="button" class="btn btn-link btn-lg" id="pause"><i class="fas fa-pause"></i></button>
             </div>
-            <div class="col-4">
+            <div class="col-4 controls">
                 <button type="button" class="btn btn-link btn-lg" id="reset"><i class="fas fa-undo"></i></button>
             </div>
         </div>
-
-
     </div>
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
