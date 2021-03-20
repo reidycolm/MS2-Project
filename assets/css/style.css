@@ -14,6 +14,10 @@ body {
     height: 100vh;
 }
 
+h2 {
+    text-decoration: overline;
+}
+
 .main-heading {
     height: 10vh;
     padding-top: 20px;
@@ -39,11 +43,12 @@ body {
 }
 
 #timer {
+    color: snow;
     padding-top: 80px;
+    font-size: 40px;
 }
 
 i,
-#timer,
 #break-duration,
 #work-duration {
     color: snow;
