@@ -5,7 +5,7 @@ let workLength = 25;
 let timerMin = workLength;
 let timerSec = 0;
 
-let timerRunning;
+let timerRunning = false;
 let workSession = true;
 
 let interval;
@@ -20,7 +20,7 @@ function startTimer() {
         if (seconds > 0) {
             seconds--;
             if (seconds < 10) {
-                $("#seconds").text("0"+sec)
+                $("#seconds").text("0"+seconds)
             } else {
                 $("#seconds").text(seconds)
             }
@@ -31,18 +31,32 @@ function startTimer() {
             $("#minutes").text(minutes);
         }
 
-    }, 1000)
+        if (minutes === 0 && seconds === 00) {
+            if (workSession) {
+                workSession = false;
+                minutes = breakLength;
+                seconds = 0
+            } else {
+                workSession = true;
+                minutes = workLength;
+                seconds = 0;
+            }
+        }
+
+    }, 10)
 }
 
 function pauseTimer() {
     clearInterval(interval);
     timerMin = parseInt($("#minutes").text());
     timerSec = parseInt($("#seconds").text());
+    timerRunning = false;
 }
 
 function resetTimer() {
     timerMin = workLength;
     timerSec = 0;
+    timerRunning = false;
     $("#minutes").text(timerMin);
     $("#seconds").text("00");
 }
