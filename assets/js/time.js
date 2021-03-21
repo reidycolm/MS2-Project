@@ -5,7 +5,7 @@ let workLength = 25;
 let timerMin = workLength;
 let timerSec = 0;
 
-let timerRunning = false;
+let timerRunning;
 let workSession = true;
 
 let interval;
@@ -15,6 +15,7 @@ let input;
 function startTimer() {
     let minutes = timerMin;
     let seconds = timerSec;
+    timerRunning = true;
     interval = setInterval(function() {
         if (seconds > 0) {
             seconds--;
