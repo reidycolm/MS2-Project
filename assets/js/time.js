@@ -37,3 +37,10 @@ function pauseTimer() {
     timerMin = parseInt($("#minutes").text());
     timerSec = parseInt($("#seconds").text());
 }
+
+function resetTimer() {
+    timerMin = workLength;
+    timerSec = 0;
+    $("#minutes").text(timerMin);
+    $("#seconds").text("00");
+}
