@@ -1,26 +1,3 @@
-/* var minutes;
-var seconds;
-
-function startTimer() {
-    minutes = 25;
-    seconds = 0;
-
-var interval = setInterval(
-    function() {
-        var timer = document.getElementById("timer");
-        if (seconds == 0) {
-            minutes = minutes - 1;
-            seconds = 59;
-            timer.innerHTML = minutes + ":" + seconds;
-        } else if (seconds > 0) {
-            seconds = seconds - 1;
-            timer.innerHTML = minutes + ":" + seconds;
-        }
-
-
-    }, 1000
-)} */
-
 //Declaring Variables
 let breakLength = 5;
 let workLength = 25;
@@ -31,11 +8,13 @@ let timerSec = 0;
 let timerRunning = true;
 let workSession = true;
 
+let interval;
+
 //Functions
 function startTimer() {
     let minutes = timerMin;
     let seconds = timerSec;
-    setInterval(function() {
+    interval = setInterval(function() {
         if (seconds > 0) {
             seconds--;
             if (seconds < 10) {
@@ -51,4 +30,10 @@ function startTimer() {
         }
 
     }, 1000)
+}
+
+function pauseTimer() {
+    clearInterval(interval);
+    timerMin = parseInt($("#minutes").text());
+    timerSec = parseInt($("#seconds").text());
 }
