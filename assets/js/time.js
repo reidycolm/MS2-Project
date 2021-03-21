@@ -5,7 +5,7 @@ let workLength = 25;
 let timerMin = workLength;
 let timerSec = 0;
 
-let timerRunning = true;
+let timerRunning = false;
 let workSession = true;
 
 let interval;
@@ -50,7 +50,7 @@ function resetTimer() {
 
 $(document).ready(function(){
     $("#less-break").click(function() {
-        if (timerRunning) {
+        if (!timerRunning) {
             input = parseInt($("#break-duration").text());
             if (input > 1) {
                 input--
@@ -61,7 +61,7 @@ $(document).ready(function(){
     })
 
         $("#more-break").click(function() {
-        if (timerRunning) {
+        if (!timerRunning) {
             input = parseInt($("#break-duration").text());
             if (input <= 29) {
                 input++
@@ -71,7 +71,31 @@ $(document).ready(function(){
         }
     })
 
+        $("#less-work").click(function () {
+            if (!timerRunning) {
+                input = parseInt($("#work-duration").text());
+                if (input > 5) {
+                    input--;
+                }
+                $("#work-duration").text(input);
+                $("#minutes").text(input);
+                workLength = input;
+                resetTimer();
+            }
+        })
 
+        $("#more-work").click(function () {
+            if (!timerRunning) {
+                input = parseInt($("#work-duration").text());
+                if (input < 60) {
+                input++;
+                }
+                $("#work-duration").text(input);
+                $("#minutes").text(input);
+                workLength = input;
+                resetTimer();
+            }
+        })
 
 
 })
