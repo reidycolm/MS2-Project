@@ -36,10 +36,12 @@ function startTimer() {
                 workSession = false;
                 minutes = breakLength;
                 seconds = 0
+                $("#session-status").text("Enjoy the break!")
             } else {
                 workSession = true;
                 minutes = workLength;
                 seconds = 0;
+                $("#session-status").text("Focus!")
             }
         }
 
@@ -59,6 +61,7 @@ function resetTimer() {
     timerRunning = false;
     $("#minutes").text(timerMin);
     $("#seconds").text("00");
+    $("#session-status").text("Focus!")
 }
 
 // jQuery Event Methods
