@@ -1,4 +1,4 @@
-var minutes;
+/* var minutes;
 var seconds;
 
 function startTimer() {
@@ -19,6 +19,36 @@ var interval = setInterval(
 
 
     }, 1000
-)
+)} */
 
-} 
+//Declaring Variables
+let breakLength = 5;
+let workLength = 25;
+
+let timerMin = workLength;
+let timerSec = 0;
+
+let timerRunning = true;
+let workSession = true;
+
+//Functions
+function startTimer() {
+    let minutes = timerMin;
+    let seconds = timerSec;
+    setInterval(function() {
+        if (seconds > 0) {
+            seconds--;
+            if (seconds < 10) {
+                $("#seconds").text("0"+sec)
+            } else {
+                $("#seconds").text(seconds)
+            }
+        } else {
+            minutes--;
+            seconds = 59;
+            $("#seconds").text(seconds);
+            $("#minutes").text(minutes);
+        }
+
+    }, 1000)
+}
