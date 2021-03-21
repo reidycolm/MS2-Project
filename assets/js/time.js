@@ -9,6 +9,7 @@ let timerRunning = true;
 let workSession = true;
 
 let interval;
+let input;
 
 //Functions
 function startTimer() {
@@ -44,3 +45,33 @@ function resetTimer() {
     $("#minutes").text(timerMin);
     $("#seconds").text("00");
 }
+
+// jQuery Event Methods
+
+$(document).ready(function(){
+    $("#less-break").click(function() {
+        if (timerRunning) {
+            input = parseInt($("#break-duration").text());
+            if (input > 1) {
+                input--
+            }
+            breakLength = input;
+            $("#break-duration").text(input);
+        }
+    })
+
+        $("#more-break").click(function() {
+        if (timerRunning) {
+            input = parseInt($("#break-duration").text());
+            if (input <= 29) {
+                input++
+            }
+            breakLength = input;
+            $("#break-duration").text(input);
+        }
+    })
+
+
+
+
+})
