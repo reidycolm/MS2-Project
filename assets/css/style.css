@@ -56,6 +56,10 @@ i,
     font-size: 24px;
 }
 
+.disableControls {
+    pointer-events: none;
+}
+
 @media screen and (max-width: 375px) {
     i,
     #break-duration,

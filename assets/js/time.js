@@ -5,7 +5,7 @@ let workLength = 25;
 let timerMin = workLength;
 let timerSec = 0;
 
-let timerRunning = false;
+let timerRunning;
 let workSession = true;
 
 let interval;
@@ -16,6 +16,7 @@ function startTimer() {
     let minutes = timerMin;
     let seconds = timerSec;
     timerRunning = true;
+    disableControl();
     interval = setInterval(function() {
         if (seconds > 0) {
             seconds--;
@@ -53,6 +54,7 @@ function pauseTimer() {
     timerMin = parseInt($("#minutes").text());
     timerSec = parseInt($("#seconds").text());
     timerRunning = false;
+    $(".stop").removeClass("disableControls");
 }
 
 function resetTimer() {
@@ -62,6 +64,10 @@ function resetTimer() {
     $("#minutes").text(timerMin);
     $("#seconds").text("00");
     $("#session-status").text("Focus!")
+}
+
+function disableControl() {
+     $(".stop").addClass("disableControls");
 }
 
 // jQuery Event Methods
