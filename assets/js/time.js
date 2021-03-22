@@ -11,6 +11,8 @@ let workSession = true;
 let interval;
 let input;
 
+let i = 0;
+
 //Functions
 function startTimer() {
     let minutes = timerMin;
@@ -38,6 +40,7 @@ function startTimer() {
                 minutes = breakLength;
                 seconds = 0
                 $("#session-status").text("Enjoy the break!")
+                sessionDone();
             } else {
                 workSession = true;
                 minutes = workLength;
@@ -68,6 +71,11 @@ function resetTimer() {
 
 function disableControl() {
      $(".stop").addClass("disableControls");
+}
+
+function sessionDone() {
+    i++;
+    $("#work-completed").text(i);
 }
 
 // jQuery Event Methods
