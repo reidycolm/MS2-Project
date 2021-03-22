@@ -39,6 +39,11 @@ h2 {
     padding-top: 65px;
 }
 
+.tracker-theme {
+    width: 100%;
+    font-size: 24px;
+}
+
 .controls {
     height: 10vh;
 }
