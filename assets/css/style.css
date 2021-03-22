@@ -42,6 +42,8 @@ h2 {
 .tracker-theme {
     width: 100%;
     font-size: 24px;
+    padding-left: 35px;
+    font-style: italic;
 }
 
 .controls {
@@ -70,5 +72,22 @@ i,
     #break-duration,
     #work-duration {
         font-size: 15px;
+    }
+
+    #timer {
+        padding-top: 30px;
+    }
+
+    .tracker-theme,
+    h2 {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .tracker-theme {
+        padding-top: 15px;
     }
 }
