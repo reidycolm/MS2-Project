@@ -41,7 +41,7 @@ h2 {
 
 .tracker-theme {
     width: 100%;
-    font-size: 24px;
+    font-size: 28px;
     padding-left: 35px;
     font-style: italic;
 }
@@ -121,7 +121,7 @@ i,
 }
 
 p {
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 @media screen and (max-width: 426px) {
