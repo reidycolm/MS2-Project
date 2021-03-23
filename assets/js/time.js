@@ -13,7 +13,7 @@ let input;
 
 let i = 0;
 
-//Functions
+// Timer Functions
 function startTimer() {
     let minutes = timerMin;
     let seconds = timerSec;
@@ -23,9 +23,9 @@ function startTimer() {
         if (seconds > 0) {
             seconds--;
             if (seconds < 10) {
-                $("#seconds").text("0"+seconds)
+                $("#seconds").text("0"+seconds);
             } else {
-                $("#seconds").text(seconds)
+                $("#seconds").text(seconds);
             }
         } else {
             minutes--;
@@ -38,18 +38,18 @@ function startTimer() {
             if (workSession) {
                 workSession = false;
                 minutes = breakLength;
-                seconds = 0
-                $("#session-status").text("Enjoy the break!")
+                seconds = 0;
+                $("#session-status").text("Enjoy the break!");
                 sessionDone();
             } else {
                 workSession = true;
                 minutes = workLength;
                 seconds = 0;
-                $("#session-status").text("Focus!")
+                $("#session-status").text("Focus!");
             }
         }
 
-    }, 10)
+    }, 10);
 }
 
 function pauseTimer() {
@@ -66,7 +66,7 @@ function resetTimer() {
     timerRunning = false;
     $("#minutes").text(timerMin);
     $("#seconds").text("00");
-    $("#session-status").text("Focus!")
+    $("#session-status").text("Focus!");
 }
 
 function disableControl() {
@@ -85,23 +85,23 @@ $(document).ready(function(){
         if (!timerRunning) {
             input = parseInt($("#break-duration").text());
             if (input > 1) {
-                input--
+                input--;
             }
             breakLength = input;
             $("#break-duration").text(input);
         }
-    })
+    });
 
         $("#more-break").click(function() {
         if (!timerRunning) {
             input = parseInt($("#break-duration").text());
             if (input <= 29) {
-                input++
+                input++;
             }
             breakLength = input;
             $("#break-duration").text(input);
         }
-    })
+    });
 
         $("#less-work").click(function () {
             if (!timerRunning) {
@@ -114,7 +114,7 @@ $(document).ready(function(){
                 workLength = input;
                 resetTimer();
             }
-        })
+        });
 
         $("#more-work").click(function () {
             if (!timerRunning) {
@@ -127,7 +127,7 @@ $(document).ready(function(){
                 workLength = input;
                 resetTimer();
             }
-        })
+        });
 
         $('input[type="checkbox"]').click(function(){
             if($(this).is(":checked")){
@@ -139,4 +139,4 @@ $(document).ready(function(){
                 $("#timer, .icons, #work-duration, #break-duration").css("color", "snow");
             }
         });
-})
+});
