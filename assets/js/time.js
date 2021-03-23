@@ -13,6 +13,9 @@ let input;
 
 let i = 0;
 
+let breakSound = document.getElementById("bells");
+let workSound = document.getElementById("gong");
+
 // Timer Functions
 function startTimer() {
     let minutes = timerMin;
@@ -34,18 +37,20 @@ function startTimer() {
             $("#minutes").text(minutes);
         }
 
-        if (minutes === 0 && seconds === 00) {
+        if (minutes === 0 && seconds === 0) {
             if (workSession) {
                 workSession = false;
                 minutes = breakLength;
                 seconds = 0;
                 $("#session-status").text("Enjoy the break!");
                 sessionDone();
+                breakSound.play();
             } else {
                 workSession = true;
                 minutes = workLength;
                 seconds = 0;
                 $("#session-status").text("Focus!");
+                workSound.play();
             }
         }
 
