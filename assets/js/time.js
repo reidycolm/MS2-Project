@@ -129,5 +129,14 @@ $(document).ready(function(){
             }
         })
 
-
+        $('input[type="checkbox"]').click(function(){
+            if($(this).is(":checked")){
+                $("body").css("background-color", "snow");
+                $("#timer, .icons, #work-duration, #break-duration").css("color", "black");
+            }
+            else if($(this).is(":not(:checked)")){
+                $("body").css("background-color", "#1E2140");
+                $("#timer, .icons, #work-duration, #break-duration").css("color", "snow");
+            }
+        });
 })
