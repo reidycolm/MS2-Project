@@ -67,6 +67,11 @@ i,
     pointer-events: none;
 }
 
+.fa-clock {
+    font-size: 2.5rem;
+    color: crimson
+}
+
 @media screen and (max-width: 375px) {
     i,
     #break-duration,
@@ -83,7 +88,8 @@ i,
         font-size: 20px;
     }
 
-    h1 {
+    h1,
+    .fa-clock {
         font-size: 25px;
     }
 
