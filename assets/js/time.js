@@ -5,6 +5,9 @@ let workLength = 25;
 let timerMin = workLength;
 let timerSec = 0;
 
+let minutes = timerMin;
+let seconds = timerSec;
+
 let timerRunning;
 let workSession = true;
 
@@ -18,8 +21,6 @@ let workSound = document.getElementById("gong");
 
 // Timer Functions
 function startTimer() {
-    let minutes = timerMin;
-    let seconds = timerSec;
     timerRunning = true;
     disableControl();
     interval = setInterval(function() {
