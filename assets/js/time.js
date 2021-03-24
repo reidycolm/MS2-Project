@@ -54,7 +54,7 @@ function startTimer() {
             }
         }
 
-    }, 10);
+    }, 1000);
 }
 
 function pauseTimer() {
@@ -144,4 +144,10 @@ $(document).ready(function(){
                 $("#timer, .icons, #work-duration, #break-duration").css("color", "snow");
             }
         });
+
+        $("#play").click(startTimer);
+
+        $("#pause").click(pauseTimer);
+
+        $("#reset").click(resetTimer);
 });
