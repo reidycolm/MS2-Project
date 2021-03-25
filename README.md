@@ -44,17 +44,23 @@ For my second project as a Code Institute student, I decided to make something t
 
 ## Features
 
--    **Custom Break & Work Durations:**
+-    **Custom Break & Work Durations** 
+        - Buttons allow the user to choose how long they intend their break and work sessions to last. When the user increases or decreases the work duration, they will see it immediately reflected on the main timer underneath.
 
-    - **Session Counter:**
+    - **Session Counter**
+        - Allows for the user to track how many pomodoros they have done. The counter only increases if a full work session has been completed and will not change if the timer is reset before the session has finished. I thought this was important as previous pomodoro apps I have used always counted incomplete sessions and it was quite frustrating not knowing the true number.
 
-    - **Dark/Light Mode:**
+    - **Dark/Light Mode** 
+        - Toggler button allows the user to select their preferred theme for the application. Dark mode is the default but can be changed instantly.
 
-    - **Sound Notifications:**
+    - **Sound Notifications** 
+        - When a work session has finished, the user will be greeted by a gentle bell sound to notify them of their well deserved break. When it's time to start working again, they will hear a different "gong" sound. This feature allows the user to not have the application taking up screen space and instead cant just leave it running in the background.
 
-    - **Pause/Reset Timer Controls:**
+    - **Start/Pause/Reset Timer Controls**
+        - Clickable icons allow for the user to have full control over the timer. They are able to decide when exactly it begins counting down. If a user is interrupted during their work sessions, they also have the option to pause and reset the countdown. When the timer is paused, the number of exact mintues and seconds left on the timer are saved and visible to the user.
 
-    - **Information Modal:**
+    - **Information Modal:** 
+        - When the information icon is selected, a Bootstrap modal will appear. This will inform the user of what exactly a pomodoro is and give a brief discription of how it was invented.
 
 
 ## Technologies Used
