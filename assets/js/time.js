@@ -16,17 +16,17 @@ let i = 0;
 let breakSound = document.getElementById("bells");
 let workSound = document.getElementById("gong");
 
-// Timer Functions
+// Timer Function
 function startTimer() {
     let minutes = timerMin;
     let seconds = timerSec;
     timerRunning = true;
     disableControl();
-    interval = setInterval(function() {
+    interval = setInterval(function () {
         if (seconds > 0) {
             seconds--;
             if (seconds < 10) {
-                $("#seconds").text("0"+seconds);
+                $("#seconds").text("0" + seconds);
             } else {
                 $("#seconds").text(seconds);
             }
@@ -57,6 +57,7 @@ function startTimer() {
     }, 1000);
 }
 
+// Pause Timer Function
 function pauseTimer() {
     clearInterval(interval);
     timerMin = parseInt($("#minutes").text());
@@ -65,6 +66,7 @@ function pauseTimer() {
     $(".stop").removeClass("disableControls");
 }
 
+// Reset Timer Function
 function resetTimer() {
     timerMin = workLength;
     timerSec = 0;
@@ -74,10 +76,12 @@ function resetTimer() {
     $("#session-status").text("Focus!");
 }
 
+// Disables Controls When Timer Is Running
 function disableControl() {
-     $(".stop").addClass("disableControls");
+    $(".stop").addClass("disableControls");
 }
 
+// Increases Session Count
 function sessionDone() {
     i++;
     $("#work-completed").text(i);
@@ -85,8 +89,10 @@ function sessionDone() {
 
 // jQuery Event Methods
 
-$(document).ready(function(){
-    $("#less-break").click(function() {
+$(document).ready(function () {
+
+    // Decrease Break Length
+    $("#less-break").click(function () {
         if (!timerRunning) {
             input = parseInt($("#break-duration").text());
             if (input > 1) {
@@ -97,7 +103,8 @@ $(document).ready(function(){
         }
     });
 
-        $("#more-break").click(function() {
+    // Increase Break Length    
+    $("#more-break").click(function () {
         if (!timerRunning) {
             input = parseInt($("#break-duration").text());
             if (input <= 29) {
@@ -108,46 +115,50 @@ $(document).ready(function(){
         }
     });
 
-        $("#less-work").click(function () {
-            if (!timerRunning) {
-                input = parseInt($("#work-duration").text());
-                if (input > 5) {
-                    input--;
-                }
-                $("#work-duration").text(input);
-                $("#minutes").text(input);
-                workLength = input;
-                resetTimer();
+    // Decrease Work Length
+    $("#less-work").click(function () {
+        if (!timerRunning) {
+            input = parseInt($("#work-duration").text());
+            if (input > 5) {
+                input--;
             }
-        });
+            $("#work-duration").text(input);
+            $("#minutes").text(input);
+            workLength = input;
+            resetTimer();
+        }
+    });
 
-        $("#more-work").click(function () {
-            if (!timerRunning) {
-                input = parseInt($("#work-duration").text());
-                if (input < 60) {
+    // Increase Break Length
+    $("#more-work").click(function () {
+        if (!timerRunning) {
+            input = parseInt($("#work-duration").text());
+            if (input < 60) {
                 input++;
-                }
-                $("#work-duration").text(input);
-                $("#minutes").text(input);
-                workLength = input;
-                resetTimer();
             }
-        });
+            $("#work-duration").text(input);
+            $("#minutes").text(input);
+            workLength = input;
+            resetTimer();
+        }
+    });
 
-        $('input[type="checkbox"]').click(function(){
-            if($(this).is(":checked")){
-                $("body").css("background-color", "snow");
-                $("#timer, .icons, #work-duration, #break-duration").css("color", "black");
-            }
-            else if($(this).is(":not(:checked)")){
-                $("body").css("background-color", "#1E2140");
-                $("#timer, .icons, #work-duration, #break-duration").css("color", "snow");
-            }
-        });
+    // Dark/Light Theme Toggle
+    $('input[type="checkbox"]').click(function () {
+        if ($(this).is(":checked")) {
+            $("body").css("background-color", "snow");
+            $("#timer, .icons, #work-duration, #break-duration").css("color", "black");
+        }
+        else if ($(this).is(":not(:checked)")) {
+            $("body").css("background-color", "#1E2140");
+            $("#timer, .icons, #work-duration, #break-duration").css("color", "snow");
+        }
+    });
 
-        $("#play").click(startTimer);
+    // Timer Controls
+    $("#play").click(startTimer);
 
-        $("#pause").click(pauseTimer);
+    $("#pause").click(pauseTimer);
 
-        $("#reset").click(resetTimer);
+    $("#reset").click(resetTimer);
 });
