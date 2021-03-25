@@ -129,7 +129,7 @@ For my second project as a Code Institute student, I decided to make something t
         - [The Session Counter](assets/img/counter.png) feature allows for the user to keep track of how many full pomodoros they have finished entirely.
 
     1. **I want a sound to play to notify me of the timer status so i don't have to be looking at the screen while I'm working to check if it's time for a break.**
-        - A light bell is sound is played to notify a user that their work session is complete. Once the break time has then finished, a different sound will then be played. This helpes the user enjoy the benefits of the timer without having to be checking the screen constantly.
+        - A light bell sound is played to notify a user that their work session is complete. Once the break time has then finished, a different sound will then be played. This helpes the user enjoy the benefits of the timer without having to be checking the screen constantly.
 
     1. **I want there to be functionality to pause and reset the timer If my sessions are interrupted and I need to restart. However, I don't want to lose my completed sessions count if this were to occur.**
         - [The Control Icons](assets/img/controls.png) allow the user to start, pause and reset the timer by clicking on them. If the user resets the countdown, the session counter will not increase and it will not be counted as the countdown did not finish.
