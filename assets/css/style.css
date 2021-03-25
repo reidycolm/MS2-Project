@@ -132,7 +132,7 @@ i,
 	color: #f39c12;
 }
 
-/* Media Queries */
+/* Media Queries for smaller screens */
 @media screen and (max-width: 426px) {
     i,
     #break-duration,
