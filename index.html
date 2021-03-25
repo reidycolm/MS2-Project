@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomodoro Timer</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Shippori+Mincho+B1&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-   <div class="container text-center">
+    <div class="container text-center">
         <div class="row">
             <div class="col-12 main-heading">
                 <h1>Pomodoro <i class="far fa-clock"></i></h1>
@@ -26,54 +30,66 @@
             </div>
         </div>
 
+        <!--Break/Work Buttons-->
         <div class="row">
             <div class="col-6 break-input">
-                <button type="button" class="btn btn-link btn-sm" id="less-break" aria-label="Decrease Break"><i class="fas fa-minus-circle icons"></i></button>
-                <button type="button" class="btn btn-link btn-lg" id="break-duration" aria-label="Break Length">5</button>
-                <button type="button" class="btn btn-link btn-sm" id="more-break" aria-label="Increase Break"><i class="fas fa-plus-circle icons"></i></button>
+                <button type="button" class="btn btn-link btn-sm" id="less-break" aria-label="Decrease Break"><i
+                        class="fas fa-minus-circle icons"></i></button>
+                <button type="button" class="btn btn-link btn-lg" id="break-duration"
+                    aria-label="Break Length">5</button>
+                <button type="button" class="btn btn-link btn-sm" id="more-break" aria-label="Increase Break"><i
+                        class="fas fa-plus-circle icons"></i></button>
             </div>
             <div class="col-6 work-input">
-                <button type="button" class="btn btn-link btn-sm" id="less-work"><i class="fas fa-minus-circle icons"></i></button>
+                <button type="button" class="btn btn-link btn-sm" id="less-work"><i
+                        class="fas fa-minus-circle icons"></i></button>
                 <button type="button" class="btn btn-link btn-lg" id="work-duration">25</button>
-                <button type="button" class="btn btn-link btn-sm" id="more-work"><i class="fas fa-plus-circle icons"></i></button>
+                <button type="button" class="btn btn-link btn-sm" id="more-work"><i
+                        class="fas fa-plus-circle icons"></i></button>
             </div>
         </div>
 
+        <!--Main Timer Section with Session Count and Theme Toggle Button-->
         <div class="row info-section">
             <div class="col-12">
                 <h1 id="session-status">Focus!</h1>
-            <div id="timer">
+                <div id="timer">
                     <span id="minutes">25</span>:<span id="seconds">00</span>
-            </div>
+                </div>
             </div>
 
             <div class="row tracker-theme">
-            <div class="col-6">
-                <p>Complete: <span id="work-completed">0</span></p>
+                <div class="col-6">
+                    <p>Complete: <span id="work-completed">0</span></p>
+                </div>
+                <div class="col-6">
+                    <input type="checkbox" name="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <span class="ball"></span>
+                    </label>
+                </div>
             </div>
-            <div class="col-6">
-                <input type="checkbox" name="checkbox" class="checkbox" id="chk"/>
-                <label class="label" for="chk">
-                    <i class="fas fa-moon"></i>
-                    <i class="fas fa-sun"></i>
-                    <span class="ball"></span>
-                </label>
-            </div>
-        </div>
         </div>
 
+        <!--Timer Controls-->
         <div class="row">
             <div class="col-3 controls">
-                <button type="button" class="btn btn-link btn-lg stop" id="play" aria-label="Play Button"><i class="fas fa-play icons"></i></button>
+                <button type="button" class="btn btn-link btn-lg stop" id="play" aria-label="Play Button"><i
+                        class="fas fa-play icons"></i></button>
             </div>
             <div class="col-3 controls">
-                <button type="button" class="btn btn-link btn-lg" id="pause" aria-label="Pause Button"><i class="fas fa-pause icons"></i></button>
+                <button type="button" class="btn btn-link btn-lg" id="pause" aria-label="Pause Button"><i
+                        class="fas fa-pause icons"></i></button>
             </div>
             <div class="col-3 controls">
-                <button type="button" class="btn btn-link btn-lg stop" id="reset" aria-label="Reset Button"><i class="fas fa-undo icons"></i></button>
+                <button type="button" class="btn btn-link btn-lg stop" id="reset" aria-label="Reset Button"><i
+                        class="fas fa-undo icons"></i></button>
             </div>
             <div class="col-3 controls">
-                <button type="button" class="btn btn-link btn-lg" id="info" aria-label="Info Button" data-toggle="modal" data-target="#infoModal"><i class="fas fa-question icons"></i></button>
+                <button type="button" class="btn btn-link btn-lg" id="info" aria-label="Info Button" data-toggle="modal"
+                    data-target="#infoModal"><i class="fas fa-question icons"></i></button>
             </div>
         </div>
     </div>
@@ -82,15 +98,19 @@
     <div class="modal" tabindex="-1" role="dialog" id="infoModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">What is a Pomodoro?</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. The technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. Each interval is known as a pomodoro, from the Italian word for 'tomato', after the tomato-shaped kitchen timer that Cirillo used as a university student</p>
-            </div>
+                <div class="modal-header">
+                    <h5 class="modal-title">What is a Pomodoro?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late
+                        1980s. The technique uses a timer to break down work into intervals, traditionally 25 minutes in
+                        length, separated by short breaks. Each interval is known as a pomodoro, from the Italian word
+                        for 'tomato', after the tomato-shaped kitchen timer that Cirillo used as a university student
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -98,10 +118,17 @@
 
     <audio id="bells" src="assets/audio/dreamy-bells.mp3"></audio>
     <audio id="gong" src="assets/audio/gong-sound.mp3"></audio>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="assets/js/time.js"></script>
 </body>
+
 </html>

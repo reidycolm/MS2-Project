@@ -26,6 +26,10 @@ h2 {
     font-style: italic;
 }
 
+p {
+    padding-top: 10px;
+}
+
 .main-heading {
     height: 10vh;
     padding-top: 20px;
@@ -75,6 +79,7 @@ i,
     pointer-events: none;
 }
 
+/* Theme Toggle Styling - This is not my code and is credited correctly in the readme.md file */
 .fa-clock {
     font-size: 2.5rem;
     color: crimson
@@ -127,10 +132,7 @@ i,
 	color: #f39c12;
 }
 
-p {
-    padding-top: 10px;
-}
-
+/* Media Queries */
 @media screen and (max-width: 426px) {
     i,
     #break-duration,
