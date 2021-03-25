@@ -4,7 +4,7 @@
 
 ### View the live project [here.](https://reidycolm.github.io/MS2-Project/)
 
-For my second project as a Code Institute student, I decided to make something that I would get everyday use out of. Since being introduced to the pomodoro technique, it has become my go to way to study. It's a very simple but effective method and I thought it would be cool to make my own. I'm really happy with how it turned out and no longer need any pomodoro apps on my phone. As I continue to learn more Javascript going forward, I feel like this is something I will continie to upgrade and add interesting features to. 
+For my second project as a Code Institute student, I decided to make something that I would get everyday use out of. Since being introduced to the pomodoro technique, it has become my go to way to study. It's a very simple but effective method and I thought it would be cool to make my own. I'm really happy with how it turned out and no longer need any pomodoro apps on my phone. As I continue to learn more Javascript going forward, I feel like this is something I will continue to upgrade and add interesting features to. 
 
 ## User Experience (UX)
 
@@ -34,4 +34,4 @@ For my second project as a Code Institute student, I decided to make something t
 
 3. **Icons:** I wanted every icon that I used to be self explanatory and be able to convey its intended purpose to the user. I feel like I accomplished this as you can easily tell what every button does without the need of actual text alongside it.
 
-4. **Audio:** Two different sounds were used to help the user distinguish between a work and break sessions. When a break is earned, a pleasant and relaxing bell sound can be heard. This is contrasted by a sudden "GONG" sound that plays when it is time to get back to work.
+4. **Audio:** Two different sounds were used to help the user distinguish between work and break sessions. When a break is earned, a pleasant and relaxing bell sound can be heard. This is contrasted by a sudden "GONG" sound that plays when it is time to get back to work.
