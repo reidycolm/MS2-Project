@@ -112,7 +112,13 @@ For my second project as a Code Institute student, I decided to make something t
         - [The W3C CSS Validator](assets/img/ms2css.png) was used to validate the CSS file of this project. No errors were found.
 
     * **JavaScript**
-        - [JsHint](assets/img/ms2jshint.png) was used to validate the HTML file of this project. No errors were found.       
+        - [JsHint](assets/img/ms2jshint.png) was used to validate the HTML file of this project. No errors were found.    
+
+- #### Lighthouse
+
+    * [**Large Screen Devices Results**](assets/img/lighthouse-desktop.png)
+
+    * [**Small Screen Devices Results**](assets/img/lighthouse-mobile.png)
 
 ## Deployment
 
