@@ -185,3 +185,23 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ## Credits
 
+### Code
+
+-   The toggle button was made with the help of [this](https://www.youtube.com/watch?v=xodD0nw2veQ) video tutorial by Florin Pop.
+
+-   [Bootstrap 4](https://getbootstrap.com/docs/4.4/getting-started/introduction/) Library and Documentation was used throughout the html file to make site responsive on all devices.
+
+-   [This](https://www.youtube.com/watch?v=6c_GUNWU1Lw&t=234s) Pomodoro Timer tutorial was a useful source to get an understanding as to how to go about making the timer in the beginning although no code was directly copied.
+
+-   [This](https://www.tutorialrepublic.com/faq/how-to-check-a-checkbox-is-checked-or-not-using-jquery.php) webpage in particlar helped when I was stuck trying to target the checkbox with a jQuery Event Method.
+
+-   [This FreeCodeCamp](https://www.freecodecamp.org/news/how-i-built-my-pomodoro-clock-app-and-the-lessons-i-learned-along-the-way-51288983f5ee/) artilce was also very usefel when I was trying to go about writing the JS code for the timer.
+### Content
+
+-   All content was written by the developer.
+
+### Media
+
+-   All Icons used were taken from Font Awesome.
+
+- The audio used for the sound notifications were sources from FreeSound. [The Bell Sound](https://freesound.org/people/danyourmaster/sounds/433654/) and [The Gong Sound](https://freesound.org/people/InspectorJ/sounds/411576/).
