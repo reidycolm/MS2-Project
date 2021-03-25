@@ -134,6 +134,27 @@ For my second project as a Code Institute student, I decided to make something t
     1. **I want there to be functionality to pause and reset the timer If my sessions are interrupted and I need to restart. However, I don't want to lose my completed sessions count if this were to occur.**
         - [The Control Icons](assets/img/controls.png) allow the user to start, pause and reset the timer by clicking on them. If the user resets the countdown, the session counter will not increase and it will not be counted as the countdown did not finish.
 
+- #### Manual Testing (Repeated on various devices and browsers)
+
+    *   **Break/Work Input**
+        -  To pass this test, I neeeded to see if clicking the +/- buttons changed the work and break time correctly. 
+        -  The result was a pass.
+
+    *   **Timer**
+        - To pass this test, I needed the ensure that the timer was counting down at a correct speed. I used a stopwatch to record how long it took for different time intervals to count down to zero. If both the timer and the stopwatch were the same, I could confirm the timer was correct.
+        - The result was a pass.    
+
+    *   **Session Counter**
+        -  To pass this test, I had to confirm whether or not the session counter increased by 1 every time a work session had completed a full countdown. I also needed to make sure it didn't inrease by 1 when the timer was reset during a countdown.
+        -  The result was a pass.
+
+    *   **Theme Toggler**
+        -  To pass this test, I had to make sure if the theme of the application changed when the toggler was moved. I aslo needed to see if the the theme reverted back to the dark mode when the toggler was moved back to its original default position.
+        -  The result was a pass.
+
+    *   **Icon Controls**
+        -  To pass this test, I had to check if clicking the start/pause/reset/info icon would initiate the correct jQuery event. When the start icon was clicked, the timer would start. When pause was clicked, the timer would pause. When the reset icon was selected, the timer would return to the selected number of work session minutes. And when the info button was clicked, the modal would activate.
+        -  The result was a pass.     
 
 ## Deployment
 
