@@ -120,6 +120,21 @@ For my second project as a Code Institute student, I decided to make something t
 
     * [**Small Screen Devices Results**](assets/img/lighthouse-mobile.png)
 
+- #### User Stories Testing    
+
+    1. **I want a timer that allows me to edit the duration of the work and break sessions. It's important that I'm able to customize the lengths as sometimes I prefer my work sessions to be longer or shorter than the standard 25 minutes of a typical pomodoro.**
+        - [Clickable plus and minus buttons](assets/img/adjustsessions.png) allow the user to select how long they would like each work session and break time to be.
+    
+    1. **I want to be able to know how many work sessions I have completed while using the timer.**
+        - [The Session Counter](assets/img/counter.png) feature allows for the user to keep track of how many full pomodoros they have finished entirely.
+
+    1. **I want a sound to play to notify me of the timer status so i don't have to be looking at the screen while I'm working to check if it's time for a break.**
+        - A light bell is sound is played to notify a user that their work session is complete. Once the break time has then finished, a different sound will then be played. This helpes the user enjoy the benefits of the timer without having to be checking the screen constantly.
+
+    1. **I want there to be functionality to pause and reset the timer If my sessions are interrupted and I need to restart. However, I don't want to lose my completed sessions count if this were to occur.**
+        - [The Control Icons](assets/img/controls.png) allow the user to start, pause and reset the timer by clicking on them. If the user resets the countdown, the session counter will not increase and it will not be counted as the countdown did not finish.
+
+
 ## Deployment
 
 ### GitHub Pages
