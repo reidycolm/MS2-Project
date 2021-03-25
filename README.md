@@ -28,10 +28,61 @@ For my second project as a Code Institute student, I decided to make something t
 
 - #### Design
 
-1. **Colour Scheme:** I used the Port Gore colour as the main background and Crimson for the text. When I think of a pomodoro, this crimson red type colour always comes to mind. The font awesmoe icons as well as the actual timer itself is the Snow colour (except for the moon and sun which are gamboge as I felt they looked better reflecting their natural self). For the light mode theme, I used this same Snow colour as the background, kept the text Crimson red and used a standard Black colour for the icons and buttons so they were easily visable.
+    * **Colour Scheme:** I used the Port Gore colour as the main background and Crimson for the text. When I think of a pomodoro, this crimson red type colour always comes to mind. The font awesmoe icons as well as the actual timer itself is the Snow colour (except for the moon and sun which are gamboge as I felt they looked better reflecting their natural self). For the light mode theme, I used this same Snow colour as the background, kept the text Crimson red and used a standard Black colour for the icons and buttons so they were easily visable.
 
-2. **Font:** The font used for this project is called Shippori Mincho B1. I played around with a few different styles but kept coming back to this one. I think it's very authentic style and fits in with the minimalist type of design I was going for.
+    * **Font:** The font used for this project is called Shippori Mincho B1. I played around with a few different styles but kept coming back to this one. I think it's very authentic style and fits in with the minimalist type of design I was going for.
 
-3. **Icons:** I wanted every icon that I used to be self explanatory and be able to convey its intended purpose to the user. I feel like I accomplished this as you can easily tell what every button does without the need of actual text alongside it.
+    * **Icons:** I wanted every icon that I used to be self explanatory and be able to convey its intended purpose to the user. I feel like I accomplished this as you can easily tell what every button does without the need of actual text alongside it.
 
-4. **Audio:** Two different sounds were used to help the user distinguish between work and break sessions. When a break is earned, a pleasant and relaxing bell sound can be heard. This is contrasted by a sudden "GONG" sound that plays when it is time to get back to work.
+    * **Audio:** Two different sounds were used to help the user distinguish between work and break sessions. When a break is earned, a pleasant and relaxing bell sound can be heard. This is contrasted by a sudden "GONG" sound that plays when it is time to get back to work.
+
+- #### Wireframes
+
+    * Large screen
+    * Small Screen
+
+## Features
+
+## Technologies Used
+
+- #### Languages
+
+    * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+    * [CSS3](https://en.wikipedia.org/wiki/CSS)
+    * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+#### Frameworks, Libraries and Other Tools
+
+* [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction)
+    - Used to style webpage and ensure it was fully reponsive
+
+    * [JQuery](https://jquery.com)
+    - I used jQuery as the primary way to select the html elements in my Javascript functions. It also helped me handle user interation with the page in the form of event methods.
+
+    * [Gitpod](https://gitpod.io/)
+    -   Gitpod was the IDE I used when making this project
+
+    * [Git](https://git-scm.com/)
+    - Used for version control and allowed me to save my changes externally by committing to GitHub
+
+    * [Github](https://github.com/)
+    -   Was used to store files of the project that I had pushed using Git & Gitpod
+
+    * [Font Awesome](https://fontawesome.com/)   
+    - Site used to soruce icons for the webpage.
+
+    * [Google Fonts](https://fonts.google.com/)   
+    - Used to select font styles       
+
+    * [Lighthouse](https://developers.google.com/web/tools/lighthouse)   
+    - Lighthouse is an open-source, automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO and more. 
+
+    * [FreeSound](https://freesound.org/)   
+    - Site I used to source the audio notifications for this project.
+
+## Testing
+
+## Deployment
+
+## Credits
+
