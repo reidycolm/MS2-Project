@@ -195,7 +195,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 -   [This](https://www.tutorialrepublic.com/faq/how-to-check-a-checkbox-is-checked-or-not-using-jquery.php) webpage in particlar helped when I was stuck trying to target the checkbox with a jQuery Event Method.
 
--   [This FreeCodeCamp](https://www.freecodecamp.org/news/how-i-built-my-pomodoro-clock-app-and-the-lessons-i-learned-along-the-way-51288983f5ee/) artilce was also very usefel when I was trying to go about writing the JS code for the timer.
+-   [This FreeCodeCamp](https://www.freecodecamp.org/news/how-i-built-my-pomodoro-clock-app-and-the-lessons-i-learned-along-the-way-51288983f5ee/) artilce was also very useful when I was trying to go about writing the JS code for the timer.
 ### Content
 
 -   All content was written by the developer.
