@@ -103,6 +103,17 @@ For my second project as a Code Institute student, I decided to make something t
 
 ## Testing
 
+- #### Validators
+
+    * **HTML**
+        - [The W3C Markup Validator](assets/img/ms2html.png) was used to validate the HTML file of this project. No errors were found.
+
+    * **CSS**
+        - [The W3C CSS Validator](assets/img/ms2css.png) was used to validate the CSS file of this project. No errors were found.
+
+    * **JavaScript**
+        - [JsHint](assets/img/ms2jshint.png) was used to validate the HTML file of this project. No errors were found.       
+
 ## Deployment
 
 ### GitHub Pages
