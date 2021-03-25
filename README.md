@@ -156,6 +156,12 @@ For my second project as a Code Institute student, I decided to make something t
         -  To pass this test, I had to check if clicking the start/pause/reset/info icon would initiate the correct jQuery event. When the start icon was clicked, the timer would start. When pause was clicked, the timer would pause. When the reset icon was selected, the timer would return to the selected number of work session minutes. And when the info button was clicked, the modal would activate.
         -  The result was a pass.     
 
+- #### Bugs
+
+    * **Timer Controls**
+        - When I first made the timer, I had it so the controls could be clicked when the timer was running. I soon realised that when the play icon was clicked while the countdown was ongoing, it would cause the timer not to work correctly. The same thing happened with the reset button. To fix this, I added a new class "diabale controls" which was added to the play and reset icon whenever the timer was running. This would ensure that those buttons could only be clicked when the timer was not counting down.
+
+    * **There are no other known bugs at this time.**
 ## Deployment
 
 ### GitHub Pages
