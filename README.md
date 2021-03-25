@@ -54,7 +54,7 @@ For my second project as a Code Institute student, I decided to make something t
         - Toggler button allows the user to select their preferred theme for the application. Dark mode is the default but can be changed instantly.
 
 -    **Sound Notifications** 
-        - When a work session has finished, the user will be greeted by a gentle bell sound to notify them of their well deserved break. When it's time to start working again, they will hear a different "gong" sound. This feature allows the user to not have the application taking up screen space and instead cant just leave it running in the background.
+        - When a work session has finished, the user will be greeted by a gentle bell sound to notify them of their well deserved break. When it's time to start working again, they will hear a different "gong" sound. This feature allows the user to not have the application taking up screen space and instead can just leave it running in the background.
 
 -    **Start/Pause/Reset Timer Controls**
         - Clickable icons allow for the user to have full control over the timer. They are able to decide when exactly it begins counting down. If a user is interrupted during their work sessions, they also have the option to pause and reset the countdown. When the timer is paused, the number of exact mintues and seconds left on the timer are saved and visible to the user.
