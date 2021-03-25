@@ -38,9 +38,9 @@ For my second project as a Code Institute student, I decided to make something t
 
 - #### Wireframes
 
-    * Large screen
+    * [Large screen](assets/img/desktop-sketch.jpg)
     
-    * Small Screen
+    * [Small screen](assets/img/mobile-sketch.jpg)
 
 ## Features
 
