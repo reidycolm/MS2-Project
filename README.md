@@ -39,6 +39,7 @@ For my second project as a Code Institute student, I decided to make something t
 - #### Wireframes
 
     * Large screen
+    
     * Small Screen
 
 ## Features
@@ -51,34 +52,35 @@ For my second project as a Code Institute student, I decided to make something t
     * [CSS3](https://en.wikipedia.org/wiki/CSS)
     * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-#### Frameworks, Libraries and Other Tools
+- #### Frameworks, Libraries and Other Tools
 
-* [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction)
-    - Used to style webpage and ensure it was fully reponsive
+    * [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction)
+        - Used to style webpage and ensure it was fully reponsive
 
     * [JQuery](https://jquery.com)
-    - I used jQuery as the primary way to select the html elements in my Javascript functions. It also helped me handle user interation with the page in the form of event methods.
+        - I used jQuery as the primary way to select the html elements in my Javascript functions. It also helped me handle user interation with the page in the form of event methods.
 
     * [Gitpod](https://gitpod.io/)
-    -   Gitpod was the IDE I used when making this project
+        -   Gitpod was the IDE I used when making this project
 
     * [Git](https://git-scm.com/)
-    - Used for version control and allowed me to save my changes externally by committing to GitHub
+        - Used for version control and allowed me to save my changes externally by committing to GitHub
 
     * [Github](https://github.com/)
-    -   Was used to store files of the project that I had pushed using Git & Gitpod
+        -  Was used to store files of the project that I had pushed using Git & Gitpod
 
     * [Font Awesome](https://fontawesome.com/)   
-    - Site used to soruce icons for the webpage.
+        - Site used to soruce icons for the webpage.
 
     * [Google Fonts](https://fonts.google.com/)   
-    - Used to select font styles       
+        - Used to select font styles       
 
     * [Lighthouse](https://developers.google.com/web/tools/lighthouse)   
-    - Lighthouse is an open-source, automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO and more. 
+        - Lighthouse is an open-source, automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO and more. 
 
     * [FreeSound](https://freesound.org/)   
-    - Site I used to source the audio notifications for this project.
+        - Site I used to source the audio notifications for this project.
+
 
 ## Testing
 
